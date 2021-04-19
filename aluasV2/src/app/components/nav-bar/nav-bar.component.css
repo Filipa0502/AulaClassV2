@@ -1,0 +1,7 @@
+a { margin-left: 15px;}
+
+.router-link-active
+{
+  color: blue;
+  font-weight: bold;
+}
