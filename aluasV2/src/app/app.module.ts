@@ -7,13 +7,15 @@ import { HomeComponent } from './components/home/home.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CalculatorComponent,
-    NavBarComponent
+    NavBarComponent,
+    EvAndRefComponent
   ],
   imports: [
     BrowserModule,
