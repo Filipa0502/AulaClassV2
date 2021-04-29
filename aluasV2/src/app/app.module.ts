@@ -9,6 +9,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/clinica-veterinaria.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/cl
     CalculatorComponent,
     NavBarComponent,
     EvAndRefComponent,
-    ClinicaVeterinariaComponent
+    ClinicaVeterinariaComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

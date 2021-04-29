@@ -10,6 +10,7 @@ export class EvAndRefComponent implements OnInit {
   constructor() { }
 
   corBackGround="";
+
   changeColor()
   {
     //this.corBackGround = "red"

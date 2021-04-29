@@ -4,9 +4,10 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
 import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/clinica-veterinaria.component';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { HomeComponent } from './components/home/home.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
-  {path:"", component:HomeComponent},
+  {path:"", component:InicioComponent},
   {path:"home", component:HomeComponent},
   {path:"calculadora", component:CalculatorComponent},
   {path:"evRef", component:EvAndRefComponent},
