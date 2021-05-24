@@ -14,6 +14,7 @@ import { FourOrFourComponent } from './components/four-or-four/four-or-four.comp
 import { ListaDeComprasComponent } from './components/lista-de-compras/lista-de-compras.component';
 import { AddComponent } from './components/lista-de-compras/add/add.component';
 import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
+import { PColorComponent } from './components/p-color/p-color.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
     ListaDeComprasComponent,
     AddComponent,
     BuyComponent,
+    PColorComponent,
   ],
   imports: [
     BrowserModule,

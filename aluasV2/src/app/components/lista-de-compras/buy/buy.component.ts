@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Artigo } from 'src/app/class/artigo';
+import { ArtigoService } from 'src/app/service/artigo.service';
 
 @Component({
   selector: 'app-buy',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyComponent implements OnInit {
 
-  constructor() { }
+  artigoService : ArtigoService;
+  constructor(lista: ArtigoService) {
+    this.artigoService = lista;
+   }
 
   ngOnInit(): void {
+  }
+
+  comprar(artigo: Artigo)
+  {
+    artigo.carrinho = true;
+    console.log("Artigo", artigo)
   }
 
 }
