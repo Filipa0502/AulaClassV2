@@ -1,0 +1,24 @@
+.cookies
+{
+  position: fixed;
+  bottom: 0;
+  /*vh - percentagem em altura*/
+  height: 25vh;
+  background: #161414;
+  color: white;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+
+  animation-name: subir;
+  animation-duration: 2s;
+}
+@keyframes subir
+{
+  from{bottom: -25vh;}
+  to{bottom: 0;}
+}

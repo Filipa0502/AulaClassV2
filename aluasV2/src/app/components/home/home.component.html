@@ -1,5 +1,54 @@
+
 <div class="container">
-  <video class="bgVideo" autoplay loop>
-    <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+  <video class="bgVideo" autoplay>
+    <source src="assets/Portefolio (1).mp4" type="video/mp4" />
   </video>
 </div>
+
+<div class="content" role="main">
+  <h2>Projetos</h2>
+  <p>A baixo é possivel visualizar os projetos realizados.</p>
+  <div class="card-container" id="projetos">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card-body">
+          <img class="card-img-bottom" src="assets/imagens/Calculadoras.gif" alt="Card image">
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/calculadora']" routerLinkActive="active" class="btn btn1">Calculator</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card-body">
+          <img class="card-img-bottom" src="assets/imagens/events.gif" alt="Card image">
+        </div>
+        <div class="card-footer">
+          <a [routerLink] = "['/evRef']" routerLinkActive="router-link-active" class="btn btn1">Events</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card-body">
+          <img class="card-img-bottom" src="assets/imagens/lista compras.gif" alt="Card image">
+        </div>
+        <div class="card-footer">
+          <a [routerLink] = "['/listaDeCompras']" routerLinkActive="router-link-active">Lista de compras</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-container" id="projetos">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="card-body">
+          <img class="card-img-bottom" src="assets/imagens/chuck.gif" alt="Card image">
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/fichaAnimal']" routerLinkActive="active" class="btn btn1">Piadas Chuck</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

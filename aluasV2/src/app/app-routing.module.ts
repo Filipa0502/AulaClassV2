@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { ChuckComponent } from './components/chuck/chuck.component';
 import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/clinica-veterinaria.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { FourOrFourComponent } from './components/four-or-four/four-or-four.component';
 import { HomeComponent } from './components/home/home.component';
@@ -10,13 +12,15 @@ import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
 import { ListaDeComprasComponent } from './components/lista-de-compras/lista-de-compras.component';
 import { FColorComponent } from './components/p-color/f-color/f-color.component';
 import { PColorComponent } from './components/p-color/p-color.component';
-import { InicioComponent } from './inicio/inicio.component';
+
 
 const routes: Routes = [
-  {path:"", component:InicioComponent},
+  {path:"", component:HomeComponent},
   {path:"home", component:HomeComponent},
   {path:"calculadora", component:CalculatorComponent},
   {path:"evRef", component:EvAndRefComponent},
+  {path:"cookies", component:CookiesComponent},
+  {path:"chuck", component:ChuckComponent},
   {path:"clinica", component:ClinicaVeterinariaComponent},
   {path:"notFound", component:FourOrFourComponent},
   {path:"listaDeCompras", component:ListaDeComprasComponent,

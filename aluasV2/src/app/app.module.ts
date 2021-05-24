@@ -9,12 +9,13 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/clinica-veterinaria.component';
-import { InicioComponent } from './inicio/inicio.component';
 import { FourOrFourComponent } from './components/four-or-four/four-or-four.component';
 import { ListaDeComprasComponent } from './components/lista-de-compras/lista-de-compras.component';
 import { AddComponent } from './components/lista-de-compras/add/add.component';
 import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
 import { PColorComponent } from './components/p-color/p-color.component';
+import { ChuckComponent } from './components/chuck/chuck.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,13 @@ import { PColorComponent } from './components/p-color/p-color.component';
     NavBarComponent,
     EvAndRefComponent,
     ClinicaVeterinariaComponent,
-    InicioComponent,
     FourOrFourComponent,
     ListaDeComprasComponent,
     AddComponent,
     BuyComponent,
     PColorComponent,
+    ChuckComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,

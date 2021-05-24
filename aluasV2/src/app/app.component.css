@@ -1,28 +1,21 @@
 .toolbar {
   position: absolute;
   top: 0;
-  right: 0;
+   right: 0;
   left: 0;
   height: 60px;
   display: flex;
   align-items: center;
-  background: #B993D6;
-  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
-  background: linear-gradient(to right, #8CA6DB, #B993D6);
+  background: #161414;
   color: white;
 /*
   justify-content: space-between;
   right: -1175px;
   transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
 }
-/*
+
 .toolbar:hover
 {
     right: 0;
     transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}*/
-
-
-.toolbar img {
-  margin: 0 16px;
 }
