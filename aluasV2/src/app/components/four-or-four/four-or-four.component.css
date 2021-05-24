@@ -1,0 +1,18 @@
+p
+{
+  position: absolute;
+  top: 63%;
+  left: 43%;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(57, 76, 94);
+
+}
+#imagem
+{
+  position: absolute;
+  top: 10%;
+  left: 17%;
+  width: 1000px;
+  height: auto;
+}
