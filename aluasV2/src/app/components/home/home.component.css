@@ -1,21 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-.bgVideo
+/*-------------------imagem de fundo-----------------------------*/
+.imagem
 {
-  position: relative;
+  position:relative;
   top: 0;
 	right: 0;
   left: 0;
-	width: 1500px;
+	width: auto;
 	height: auto;
   z-index: -1;
+}
+/*----------------logo-------------------------------*/
+.ImgLogo
+{
+  position:absolute;
+  top: 10%;
+	right: 0;
+  left: 5%;
+	width: auto;
+	height: auto;
+  z-index: 1;
+  animation: animacaoLogo 2s;
+}
+
+@keyframes animacaoLogo
+{
+    from { left: -1000px   }
+    to   { left: 5% }
+}
+/*---------------Video----------------*/
+.video
+{
+  position:absolute;
+  top: 0%;
+	right: 0;
+  left: 60%;
+	width: 721px;
+	height: auto;
+  z-index: 1;
+}
+/*-----------------------------linha horinzontal-------------------*/
+.linha
+{
+  position: absolute;
+  width: 910px;
+  border: 5px solid rgb(255, 255, 255);
+  top: 85%;
+	right: 0;
+  left: 0;
+  z-index: 1;
+  animation: animacaoLinha 2s;
+}
+@keyframes animacaoLinha
+{
+    from { left: -1000px   }
+    to   { left: 0% }
+}
+/*------------------------titulo----------------------------------*/
+.titulo
+{
+  position:absolute;
+  top: 55%;
+  right: 0;
+  left: 29%;
+  color: #eee;
+  font-family: 'Dancing Script', cursive;
+  font-size: 150px;
+  animation: animacaoTitulo 2s;
+}
+@keyframes animacaoTitulo
+{
+    from { left: -1000px   }
+    to   { left: 29% }
 }
 
 .container
 {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
   flex-direction: column;
   align-items: center;
 }
@@ -55,7 +117,7 @@
 
 
 /*////////////////////imagens dos projetos/////////////////////////////*/
-img
+.card-body
 {
   border-radius: 10px;
   width: 300px;
@@ -87,7 +149,7 @@ img
   padding-top: 10px;
 }
 
-/* Responsive Styles */
+/*------------------------------------ Responsive Styles -------------------------------*/
 @media screen and (max-width: 767px) {
 
   .card-container > *:not(.circle-link) ,

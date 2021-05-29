@@ -1,10 +1,53 @@
 
-<div id="calculadora">
+<!--<div id="calculadora">-->
 <!--ngModel = vai buscar e atribui-->
-<input placeholder="num 1" [(ngModel)] = "valor1" (input)="calcula()">
+<!--<input placeholder="num 1" [(ngModel)] = "valor1" (input)="calcula()">
 <input placeholder="num 2" [(ngModel)] = "valor2" (input)="calcula()">
 <input placeholder="num 2" [(ngModel)] = "sinal" (input)="calcula()">
 
 <h1>soma: {{resultado}}</h1>
 
+</div>-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="base">
+        <div class="display"></div>
+        <div class="NumOper">
+          <table style="width: 100%;">
+            <tr>
+              <td class="operacoes" colspan="3">AC</td>
+              <td class="operacoes" colspan="1">/</td>
+            </tr>
+            <tr>
+              <td class="numeros">7</td>
+              <td class="numeros" >8</td>
+              <td class="numeros" >9</td>
+              <td class="operacoes" >x</td>
+            </tr>
+            <tr>
+              <td class="numeros" >4</td>
+              <td class="numeros" >5</td>
+              <td class="numeros" >6</td>
+              <td class="operacoes" >-</td>
+            </tr>
+            <tr>
+              <td class="numeros" >3</td>
+              <td class="numeros" >2</td>
+              <td class="numeros" >1</td>
+              <td class="operacoes" >+</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="numeros" >0</td>
+              <td class="numeros" >.</td>
+              <td class="operacoes" >=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
 </div>

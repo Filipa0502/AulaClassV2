@@ -13,6 +13,7 @@
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
+  z-index: 1;
 
   animation-name: subir;
   animation-duration: 2s;
