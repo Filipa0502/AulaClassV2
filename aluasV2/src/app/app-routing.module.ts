@@ -20,9 +20,9 @@ const routes: Routes = [
   {path:"calculadora", component:CalculatorComponent},
   {path:"evRef", component:EvAndRefComponent},
   {path:"cookies", component:CookiesComponent},
-  {path:"chuck", component:ChuckComponent},
   {path:"clinica", component:ClinicaVeterinariaComponent},
   {path:"notFound", component:FourOrFourComponent},
+  {path:"chuck", component:ChuckComponent},
   {path:"listaDeCompras", component:ListaDeComprasComponent,
     children:
     [
