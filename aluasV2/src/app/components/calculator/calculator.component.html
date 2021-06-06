@@ -14,35 +14,36 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <div class="base">
-        <div class="display"></div>
+        <input [value]="display" type="text" class="display" name="display" readonly>
         <div class="NumOper">
           <table style="width: 100%;">
             <tr>
-              <td class="operacoes" colspan="3">AC</td>
-              <td class="operacoes" colspan="1">/</td>
+              <td class="operacoes" (click)="limpar()" colspan="2">ON</td>
+              <td class="operacoes" (click)="limpar()" colspan="1">AC</td>
+              <td class="operacoes" (click)="definirOperacao('/')" colspan="1">/</td>
             </tr>
             <tr>
-              <td class="numeros">7</td>
-              <td class="numeros" >8</td>
-              <td class="numeros" >9</td>
-              <td class="operacoes" >x</td>
+              <td class="numeros" (click)="adicionarNumero('7')">7</td>
+              <td class="numeros" (click)="adicionarNumero('8')">8</td>
+              <td class="numeros" (click)="adicionarNumero('9')">9</td>
+              <td class="operacoes" (click)="definirOperacao('*')" >x</td>
             </tr>
             <tr>
-              <td class="numeros" >4</td>
-              <td class="numeros" >5</td>
-              <td class="numeros" >6</td>
-              <td class="operacoes" >-</td>
+              <td class="numeros" (click)="adicionarNumero('4')">4</td>
+              <td class="numeros" (click)="adicionarNumero('5')">5</td>
+              <td class="numeros" (click)="adicionarNumero('6')">6</td>
+              <td class="operacoes" (click)="definirOperacao('-')">-</td>
             </tr>
             <tr>
-              <td class="numeros" >3</td>
-              <td class="numeros" >2</td>
-              <td class="numeros" >1</td>
-              <td class="operacoes" >+</td>
+              <td class="numeros" (click)="adicionarNumero('3')">3</td>
+              <td class="numeros" (click)="adicionarNumero('2')">2</td>
+              <td class="numeros" (click)="adicionarNumero('1')">1</td>
+              <td class="operacoes"(click)="definirOperacao('+')" >+</td>
             </tr>
             <tr>
-              <td colspan="2" class="numeros" >0</td>
-              <td class="numeros" >.</td>
-              <td class="operacoes" >=</td>
+              <td colspan="2" class="numeros" (click)="adicionarNumero('0')">0</td>
+              <td class="numeros" (click)="adicionarNumero('.')">.</td>
+              <td class="operacoes" (click)="calcular()">=</td>
             </tr>
           </table>
         </div>
