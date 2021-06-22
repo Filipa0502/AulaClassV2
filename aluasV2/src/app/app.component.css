@@ -1,17 +1,13 @@
 .toolbar {
   position: absolute;
   top: 0;
-   right: 0;
+  right: 0;
   left: 0;
   height: 60px;
   display: flex;
   align-items: center;
   background:transparent;
   color: white;
-/*
-  justify-content: space-between;
-  right: -1175px;
-  transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
 }
 
 .toolbar:hover

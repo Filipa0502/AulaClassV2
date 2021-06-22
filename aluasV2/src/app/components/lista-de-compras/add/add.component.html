@@ -1,7 +1,11 @@
 <!--ADD-->
-<button  class="m-5" (click)="adicionarLista(nome.value, preco.value)">Add</button>
-<input type="text"  #nome>
-<input type="text" #preco>
-<div *ngFor="let artigo of artigoService.listaArtigo">
-  <p class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.nome}} {{artigo.preco}}€</p>
+<div class="add">
+  Nome: <input type="text" #nome>
+  Preço: <input type="text" #preco>
+  <button class="m-5" (click)="adicionarLista(nome.value, preco.value)">Add</button>
+
+  <div *ngFor="let artigo of artigoService.listaArtigo">
+    <p class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.nome}} - {{artigo.preco}} €</p>
+  </div>
 </div>
+

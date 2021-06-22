@@ -1,8 +1,38 @@
-div
+.fundo
 {
-  position: absolute;
-  top: 10%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: url(src/assets/imagens/fundoEscuro.jpg) no-repeat;
+  background-size:100%;
 }
 
-input
-{display: block;}
+
+
+.input
+{
+  position:absolute;
+  display: block;
+  top:20%;
+  left: 47.5%;
+}
+
+.btn1
+{
+  position:absolute;
+  top:25%;
+}
+.btn2
+{
+  position:absolute;
+  top:25%;
+  left: 46%;
+}
+.btn3
+{
+  position:absolute;
+  top:25%;
+  left: 55%;
+}

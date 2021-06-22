@@ -1,4 +1,10 @@
+<div class="fundo">
+  <div>
+    <input type="text" class="input" [style.background] = "cor" (mouseenter)='changeColor("red")' (focus)='changeColor("pink")' (blur)='changeColor("grey")' (input)='changeColor("green")' (copy)='changeColor("yellow")' #ref>
 
-<div>
-  <input [style.background] = 'corBackGround' (mouseenter)="changeColor()" (mouseleave)="changeColor()">
+    <input type="button" class="btn1" (click)="color(ref)" value="Color">
+    <input type="button" class="btn2" (click)="size(ref)" value="Size">
+    <input type="button" class="btn3" (click)="background(ref)" value="Background">
+  </div>
 </div>
+
